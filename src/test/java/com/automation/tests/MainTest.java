@@ -13,5 +13,6 @@ public class MainTest {
         Configuration.timeout = 60000;
         open("https://bgtm-014.dx.commercecloud.salesforce.com/s/QFCC/shop");
         new AddressQualificationPage().checkAddressAvailability("1431 MUIR CIR").selectRandomSpeed().clickContinueButton().waitUntilAppointmentDateIsAvailable();
+        System.out.println("Fork it!");
     }
 }
